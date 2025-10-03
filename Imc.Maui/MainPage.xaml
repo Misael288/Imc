@@ -1,0 +1,126 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Imc.Maui.MainPage"
+             Title="Indice de Masa Corporal"
+             Shell.BackgroundColor="#512BD4"
+             Shell.TitleColor="White">
+
+    <Grid
+        Margin="24"
+        RowSpacing="36">
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+            <RowDefinition  Height="Auto"/>
+                
+            
+        </Grid.RowDefinitions>
+
+        <Border
+            
+            Grid.Row="0"
+            Grid.Column="0"
+            Stroke="Gray"
+            Padding="16">
+
+
+            <Grid
+                RowDefinitions="Auto,Auto,Auto,Auto" 
+                RowSpacing="4">
+                <Label 
+                    Grid.Row="0"
+                    Grid.Column="0"
+                    Text="Peso en Kilogramos"
+                    FontSize="Small"/>
+
+                <Entry 
+                    Grid.Row="1"
+                    Grid.Column="0"/>
+    
+                <Label 
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontSize="Small"
+                    Text="Estatura en metros"/>
+
+                <Entry
+                    Grid.Row="3"
+                    Grid.Column="0"/>
+
+            </Grid>
+                
+
+        </Border>
+
+        <HorizontalStackLayout 
+            Grid.Row="1"
+            Grid.Column="0"
+            HorizontalOptions="Center"
+            VerticalOptions="Center"
+            Spacing="36">
+            
+            
+                <Button
+                    FontSize="Small"
+                    Text="Calcular"/>
+                <Button
+                    FontSize="Small"
+                    Text="Limpiar"/>
+
+        </HorizontalStackLayout>
+
+
+        <Border
+            Grid.Row="2"
+            Grid.Column="0"
+            Stroke="Gray"
+            Padding="16"    >
+
+            <Border.StrokeShape>
+
+                <RoundRectangle CornerRadius="10"/>
+
+            </Border.StrokeShape>
+
+            <Grid
+                RowDefinitions="Auto,Auto,Auto,Auto"
+                RowSpacing="8">
+                <Label
+                    
+                   Grid.Row="0"
+                   Grid.Column="0"
+                   FontSize="Small"
+                   Text="El indice de Masa Corporal de la persona es :"/>
+                <Label
+                    Grid.Row="1"
+                    Grid.Column="0"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    Text="24.255"/>
+
+                <Label
+                    Grid.Row="2"
+                    Grid.Column="0"
+                    FontSize="Small"
+                    Text="La situacion Nutricional de la persona es:"/>
+
+                <Label
+                    Grid.Row="3"
+                    Grid.Column="0"
+                    FontSize="Medium"
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    Text="Peso normal"/>
+
+            </Grid>
+        </Border>
+        
+
+    </Grid>
+    
+    
+</ContentPage>
