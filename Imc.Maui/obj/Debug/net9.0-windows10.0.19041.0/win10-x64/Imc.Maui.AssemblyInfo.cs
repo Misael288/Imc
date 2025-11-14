@@ -18,7 +18,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Imc.Maui")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0+0bbe144f63612b1a29ed1d5b54c0160b45ced3ff")]
 [assembly: System.Reflection.AssemblyProductAttribute("Imc.Maui")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Imc.Maui")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

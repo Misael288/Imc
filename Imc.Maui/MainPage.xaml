@@ -38,7 +38,9 @@
 
                 <Entry 
                     Grid.Row="1"
-                    Grid.Column="0"/>
+                    Grid.Column="0"
+                    FontSize="Small"
+                    x:Name="PesoEntry"/>
     
                 <Label 
                     Grid.Row="2"
@@ -48,7 +50,9 @@
 
                 <Entry
                     Grid.Row="3"
-                    Grid.Column="0"/>
+                    Grid.Column="0"
+                    FontSize="Small"
+                    x:Name="EstaturaEntry"/>
 
             </Grid>
                 
@@ -65,10 +69,12 @@
             
                 <Button
                     FontSize="Small"
-                    Text="Calcular"/>
+                    Text="Calcular"
+                    Clicked="OnCalcularButtonClicked"/>
                 <Button
                     FontSize="Small"
-                    Text="Limpiar"/>
+                    Text="Limpiar"
+                    Clicked="OnLimpiarButtonClicked"/>
 
         </HorizontalStackLayout>
 
@@ -100,7 +106,8 @@
                     FontSize="Medium"
                     FontAttributes="Bold"
                     HorizontalOptions="Center"
-                    Text="24.255"/>
+                    Text="24.255"
+                    x:Name="ImcLabel"/>
 
                 <Label
                     Grid.Row="2"
@@ -114,7 +121,8 @@
                     FontSize="Medium"
                     FontAttributes="Bold"
                     HorizontalOptions="Center"
-                    Text="Peso normal"/>
+                    Text="Peso normal"
+                    x:Name="SituacionNutricionalLabel"/>
 
             </Grid>
         </Border>
